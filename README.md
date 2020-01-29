@@ -14,6 +14,12 @@ If you are new, you can also find [here](http://www.erogol.com/text-speech-deep-
 
 [Details...](https://github.com/mozilla/TTS/wiki/Mean-Opinion-Score-Results)
 
+## Utilities under this Project
+- Deep Learning based Text2Speech model.
+- ```dataset_analysis```: Tools to curate a Text2Speech dataset.
+- ```speaker_encoder```: Speaker Encoder model computing embedding vectors for voice files.
+- ```server```: Basic server implementation with packaging. 
+
 ## Requirements and Installation
 Highly recommended to use [miniconda](https://conda.io/miniconda.html) for easier installation.
   * python>=3.6
@@ -112,6 +118,8 @@ You can also enjoy Tensorboard,  if you point Tensorboard argument```--logdir```
 ## Testing
 Best way to test your network is to use Notebooks under ```notebooks``` folder.
 
+There is also a good [CoLab](https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/Mozilla_TTS_WaveRNN.ipynb) sample using pre-trained models (by @tugstugi).
+
 ## Contribution guidelines
 This repository is governed by Mozilla's code of conduct and etiquette guidelines. For more details, please read the [Mozilla Community Participation Guidelines.](https://www.mozilla.org/about/governance/policies/participation/)
 
@@ -160,9 +168,9 @@ Please feel free to offer new changes and pull things off. We are happy to discu
 - [x] Generate human-like speech on a different dataset (Nancy) (TWEB).
 - [x] Train TTS with r=1 successfully.
 - [x] Enable process based distributed training. Similar to (https://github.com/fastai/imagenet-fast/).
-- [x] Adapting Neural Vocoder. TTS works with (https://github.com/erogol/WaveRNN)
+- [x] Adapting Neural Vocoder. TTS works with WaveRNN and ParallelWaveGAN (https://github.com/erogol/WaveRNN and https://github.com/erogol/ParallelWaveGAN)
 - [ ] Multi-speaker embedding.
-- [ ] Model optimization (model export, prunning etc.)
+- [ ] Model optimization (model export, model pruning etc.)
 
 <!--## References
 - [Efficient Neural Audio Synthesis](https://arxiv.org/pdf/1802.08435.pdf)
